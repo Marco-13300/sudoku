@@ -1,2 +1,2 @@
-let seven = 7;
-let seventySeven = 77
+console.log(seven)= 7;
+console.log(seventySeven) = 77;
