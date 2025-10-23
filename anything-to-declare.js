@@ -1,3 +1,3 @@
 let age = 38;
-let name = pouyalet;
+let name = POUYALET;
 let secureLuggage = false;
