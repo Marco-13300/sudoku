@@ -1,2 +1,2 @@
 let seven = 7;
-let seventySeven = 77;
+let seventySeven = 77
