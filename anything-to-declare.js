@@ -1,4 +1,3 @@
 let age = 38;
-let name = marcpouyalet;
+let name = pmarc;
 let secureLuggage = false;
-console.log(age, name, secureLuggage);
