@@ -1,1 +1,1 @@
-let duplicate = `${sentence}, ${sentence}, ${sentence} !`
+let duplicate = `${sentence}, ${sentence} !`;
