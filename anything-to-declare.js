@@ -1,3 +1,3 @@
 let age = 38;
 let name = "pmarc";
-let secureLuggage = false;
+let secureLuggage = false
