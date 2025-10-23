@@ -1,1 +1,1 @@
-console.log(${sentence}, ${sentence}, ${sentence} !);
+let duplicate = ${sentence}, ${sentence}, ${sentence} !
