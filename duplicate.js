@@ -1,3 +1,3 @@
-let I told you so = Hello there;
-let duplicate = `${I told you so}, ${I told you so, I told you so} !`;
+let sentence = I told you;
+let duplicate = `${I sentence}, ${sentence, sentence} !`;
 console.log(duplicate)
