@@ -1,2 +1,2 @@
 let escapeFromDelimiters = "\", \',\`";
-let escapeTheEscap = "\\"
+let escapeTheEscape = "\\";
