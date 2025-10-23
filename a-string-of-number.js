@@ -1,2 +1,2 @@
-let seven= "7";
-let seventSeven = "77"
+let seven = "7";
+let seventySeven = "77"
