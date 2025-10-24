@@ -1,0 +1,18 @@
+.face {
+  background-color: #e0f7fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.corps {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.jambes {
+  background-color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
