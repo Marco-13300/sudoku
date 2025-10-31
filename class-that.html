@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mon entité</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon être</title>
   <link rel="stylesheet" href="class-that.css">
 </head>
 <body>
-  <section id="face">face</section>
-  <section id="upper-body">upper-body</section>
-  <section id="lower-body">lower-body</section>
-  <script src="class-that.js"></script>
+
+  <section id="face" class="flex center">
+    <div id="eye-left" class="eye"></div>
+    <div id="eye-right" class="eye"></div>
+  </section>
+
+  <section id="upper-body" class="flex center">
+    <div id="arm-left" class="arm"></div>
+    <div id="torso" class="flex center">Torso</div>
+    <div id="arm-right" class="arm"></div>
+  </section>
+
+  <section id="lower-body" class="flex center">
+    <div id="leg-left" class="leg"></div>
+    <div id="leg-right" class="leg"></div>
+  </section>
+
 </body>
 </html>
