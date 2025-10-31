@@ -37,15 +37,6 @@ p {
   background-color: lightsalmon;
 }
 
-#eyes {
-  display: flex;
-  background-color: yellow;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px;
-  width: 200px;
-}
-
 #torso {
   width: 200px;
   background-color: violet;
@@ -69,13 +60,13 @@ p {
 
 .arm {
   background-color: aquamarine;
+  width: 50px;
+  height: 30px;
+  margin: 5px;
 }
 
 .leg {
   background-color: dodgerblue;
-}
-
-.body-member {
   width: 50px;
   height: 30px;
   margin: 5px;
