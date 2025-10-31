@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+section {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+div {
+  height: calc(100vh / 3);
+  color: red;
+}
+
+section div.cyan {
+  background-color: cyan;
+}
+
+section div.blue {
+  background-color: blue;
+}
+
+#block-1 {
+  background-color: red;
+}
