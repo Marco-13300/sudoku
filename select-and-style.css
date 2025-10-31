@@ -9,23 +9,19 @@ body {
 }
 
 section {
-  padding: 1rem;
-  border: 1px solid #ccc;
+  padding: 20px;
+  width: 100%;
+  height: calc(100% / 3);
 }
 
-div {
-  height: calc(100vh / 3);
-  color: red;
-}
-
-section div.cyan {
+#face {
   background-color: cyan;
 }
 
-section div.blue {
-  background-color: blue;
+#upper-body {
+  background-color: blueviolet;
 }
 
-#block-1 {
-  background-color: red;
+#lower-body {
+  background-color: lightsalmon;
 }
