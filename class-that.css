@@ -60,13 +60,13 @@ p {
 
 .arm {
   background-color: aquamarine;
-  width: 50px;
-  height: 30px;
-  margin: 5px;
 }
 
 .leg {
   background-color: dodgerblue;
+}
+
+.body-member {
   width: 50px;
   height: 30px;
   margin: 5px;
