@@ -4,7 +4,7 @@
   opacity: 0.85;
 }
 
-body {
+.body {
   height: 100vh;
 }
 
@@ -24,20 +24,20 @@ p {
   border-radius: 30px;
 }
 
-#face {
+.face {
   background-color: cyan;
   align-items: center;
 }
 
-#upper-body {
+.upper-body {
   background-color: blueviolet;
 }
 
-#lower-body {
+.lower-body {
   background-color: lightsalmon;
 }
 
-#torso {
+.torso {
   width: 200px;
   background-color: violet;
 }
