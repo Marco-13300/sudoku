@@ -4,7 +4,7 @@
   opacity: 0.85;
 }
 
-.body {
+#body {
   height: 100vh;
 }
 
@@ -24,20 +24,20 @@ p {
   border-radius: 30px;
 }
 
-.face {
+#face {
   background-color: cyan;
   align-items: center;
 }
 
-.upper-body {
+#upper-body {
   background-color: blueviolet;
 }
 
-.lower-body {
+#lower-body {
   background-color: lightsalmon;
 }
 
-.torso {
+#torso {
   width: 200px;
   background-color: violet;
 }
@@ -51,22 +51,22 @@ p {
   align-items: center;
 }
 
-.eye {
+#eye {
   width: 60px;
   height: 60px;
   background-color: red;
   border-radius: 50%;
 }
 
-.arm {
+#arm {
   background-color: aquamarine;
 }
 
-.leg {
+#leg {
   background-color: dodgerblue;
 }
 
-.body-member {
+#body-member {
   width: 50px;
   height: 30px;
   margin: 5px; 
