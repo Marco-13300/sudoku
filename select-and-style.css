@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    opacity: 0.85;
+}
+body {
+    height: 100vh;
+}
+section {
+    
+    width: 100px;
+    height: calc(100%/3)
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: lightgrey;
+}
+#face {
+    background-color: cyan;
+}
+#upper-body {
+    background-color: blueviolet;
+}
+#lower-body {
+    background-color: lightsalmon;
+}
