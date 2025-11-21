@@ -7,9 +7,9 @@ body {
     height: 100vh;
 }
 section {
-    
-    width: 100px;
-    height: calc(100%/3)
+    pading 20px;
+    width: 100%;
+    height: calc(100%/3);
     border: 2px solid black;
     margin: 20px auto;
     background-color: lightgrey;
