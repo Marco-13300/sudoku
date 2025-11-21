@@ -1,13 +1,16 @@
+/* Universal selector */
 * {
   margin: 0;
   box-sizing: border-box;
   opacity: 0.85;
 }
 
-#body {
+/* Body */
+body {
   height: 100vh;
 }
 
+/* Sections */
 section {
   padding: 20px;
   width: 100%;
@@ -16,6 +19,7 @@ section {
   justify-content: center;
 }
 
+/* Borders for div and p elements */
 div,
 p {
   border: solid 1px black;
@@ -24,6 +28,7 @@ p {
   border-radius: 30px;
 }
 
+/* Section backgrounds */
 #face {
   background-color: cyan;
   align-items: center;
@@ -37,37 +42,18 @@ p {
   background-color: lightsalmon;
 }
 
+/* Eyes container */
+#eyes {
+  display: flex;
+  background-color: yellow;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  width: 200px;
+}
+
+/* Torso */
 #torso {
   width: 200px;
   background-color: violet;
-}
-
-.flex {
-  display: flex;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-}
-
-#eye {
-  width: 60px;
-  height: 60px;
-  background-color: red;
-  border-radius: 50%;
-}
-
-#arm {
-  background-color: aquamarine;
-}
-
-#leg {
-  background-color: dodgerblue;
-}
-
-#body-member {
-  width: 50px;
-  height: 30px;
-  margin: 5px; 
 }
