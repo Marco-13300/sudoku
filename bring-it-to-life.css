@@ -47,7 +47,7 @@ p {
 
 /* Eyes container */
 
-.eye-closed {
+#eye-closed {
   height: 4px;
   padding: 0 5px;
   border-radius: 10px;
