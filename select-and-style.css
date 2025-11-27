@@ -1,25 +1,25 @@
-div,
-p {
-  border: solid 1px black;
-  padding: 10px;
-  margin: 0;
-  border-radius: 30px;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    opacity: 0.85;
 }
-
+body {
+    height: 100vh;
+}
+section {
+    padding: 20px;
+    width: 100%;
+    height: calc(100%/3);
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: lightgrey;
+}
 #face {
-  align-items: center;
+    background-color: cyan;
 }
-
-#eyes {
-  display: flex;
-  background-color: yellow;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px;
-  width: 200px;
+#upper-body {
+    background-color: blueviolet;
 }
-
-#torso {
-  width: 200px;
-  background-color: violet;
+#lower-body {
+    background-color: lightsalmon;
 }
