@@ -1,94 +1,165 @@
-/* Universal selector */
+/* Reset et body */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  opacity: 0.85;
 }
 
-/* Body full viewport height */
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-/* Sections styling */
-section {
-  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  height: calc(100% / 3);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: Arial, sans-serif;
 }
 
-/* Section background colors */
+/* Face */
 #face {
-  background-color: cyan;
+  width: 200px;
+  height: 200px;
+  background: #ffd700;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-}
-
-#upper-body {
-  background-color: blueviolet;
-}
-
-#lower-body {
-  background-color: lightsalmon;
-}
-
-/* Nested elements styling */
-div,
-p {
-  border: solid 1px black;
-  padding: 10px;
-  margin: 0;
-  border-radius: 30px;
-}
-
-/* Eyes container */
-
-#eye-closed {
-  height: 4px;
-  padding: 0 5px;
-  border-radius: 10px;
+  justify-content: center;
+  position: relative;
+  border: 5px solid #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 #eyes {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 200px;
-  background-color: yellow;
-  border-radius: 50px;
+  gap: 50px;
+  margin-top: -20px;
 }
 
-/* Torso */
-#torso {
-  width: 200px;
-  background-color: violet;
-}
-
-/* Classes pour les éléments répétitifs */
 .eye {
-  width: 60px;
-  height: 60px;
-  background-color: red;
+  width: 30px;
+  height: 40px;
+  background: #333;
   border-radius: 50%;
+  position: relative;
+  animation: blink 3s infinite;
+}
+
+.eye::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+@keyframes blink {
+  0%, 96%, 100% {
+    height: 40px;
+  }
+  98% {
+    height: 4px;
+  }
+}
+
+/* Upper Body */
+#upper-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#torso {
+  width: 120px;
+  height: 180px;
+  background: #ff6b6b;
+  border-radius: 20px;
+  border: 5px solid #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .arm {
-  background-color: aquamarine;
+  width: 40px;
+  height: 140px;
+  background: #ff6b6b;
+  border-radius: 20px;
+  border: 5px solid #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#arm-left {
+  margin-right: 10px;
+  animation: wave-left 2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+#arm-right {
+  margin-left: 10px;
+  animation: wave-right 2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes wave-left {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes wave-right {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+/* Lower Body */
+#lower-body {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 .leg {
-  background-color: dodgerblue;
+  width: 40px;
+  height: 120px;
+  background: #4ecdc4;
+  border-radius: 20px;
+  border: 5px solid #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.body-member {
-  width: 50px;
-  margin: 30px;
+#leg-left {
+  animation: walk-left 1s ease-in-out infinite;
+  transform-origin: top center;
 }
 
-.class-that {
-  border: 3px dashed black;
+#leg-right {
+  animation: walk-right 1s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes walk-left {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes walk-right {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
 }
