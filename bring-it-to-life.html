@@ -1,32 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon entité</title>
-  <link rel="stylesheet" href="bring-it-to-life.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bring-It-To-Life - Marcellus</title>
+    <link rel="stylesheet" href="bring-it-to-life.css">
 </head>
 <body>
-  <!-- Face -->
-  <section id="face">
-    <div id="eyes">
-      <div id="eye-left" class="eye"></div>
-      <div id="eye-right" class="eye"></div>
+
+    <div class="background-band top-band"></div>
+    <div class="background-band middle-band"></div>
+    <div class="background-band bottom-band"></div>
+
+    <div class="marcelus-body">
+        
+        <div class="switch-container">
+            <div id="life-switch" class="switch-ball"></div>
+        </div>
+
+        <div class="torso-container">
+            <div class="arm left-arm"></div>
+            <div class="torso"></div>
+            <div class="arm right-arm"></div>
+        </div>
+        
+        <div class="legs-container">
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+        </div>
+
     </div>
-  </section>
 
-  <!-- Upper Body -->
-  <section id="upper-body">
-    <div id="arm-left" class="arm body-member"></div>
-    <div id="torso"></div>
-    <div id="arm-right" class="arm body-member"></div>
-  </section>
-
-  <!-- Lower Body -->
-  <section id="lower-body">
-    <div id="leg-left" class="leg body-member"></div>
-    <div id="leg-right" class="leg body-member"></div>
-  </section>
+    <script src="bring-it-to-life.js"></script>
 </body>
 </html>
