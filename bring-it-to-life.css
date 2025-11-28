@@ -1,116 +1,84 @@
-:root {
-    --color-aqua: #80d9d9;
-    --color-purple: #a588d9;
-    --color-peach: #ffb880;
-    --color-torso: #e0b0e0;
-    --color-limbs: #80d9c0;
-    --color-legs: #a0b0e0;
-    --color-switch-track: #f0f8a0;
-    --color-switch-ball: #f08080;
+/* --- Consignes: select-and-style --- */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    opacity: 0.85;
 }
 
 body {
-    margin: 0;
     height: 100vh;
+}
+
+section {
+    padding: 20px;
+    width: 100%;
+    height: calc(100% / 3);
+    /* Consigne nesting-organs : transformer les sections en flex container */
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-    position: relative;
 }
 
-#background-band-1, #background-band-2, #background-band-3 {
-    position: absolute;
-    width: 100%;
-    height: 33.33vh; 
-    z-index: -1; 
+#face {
+    background-color: cyan;
+    align-items: center; /* Centrage vertical pour le visage */
 }
-.top-band { top: 0; background-color: var(--color-aqua); }
-.middle-band { top: 33.33vh; background-color: var(--color-purple); }
-.bottom-band { bottom: 0; background-color: var(--color-peach); }
 
-#marcelus-body {
+#upper-body {
+    background-color: blueviolet;
+}
+
+#lower-body {
+    background-color: lightsalmon;
+}
+
+/* --- Consignes: nesting-organs --- */
+div, p {
+    border: solid 1px black;
+    padding: 10px;
+    margin: 0;
+    border-radius: 30px;
+}
+
+#eyes {
     display: flex;
-    flex-direction: column;
+    background-color: yellow;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px; 
-}
-
-#switch-container {
-    width: 80px;
-    height: 30px;
-    background-color: var(--color-switch-track);
-    border-radius: 15px;
-    padding: 3px;
-    display: flex;
-    transition: all 0.3s ease-in-out; 
-}
-
-#life-switch-ball {
-    width: 30px;
-    height: 30px;
-    background-color: var(--color-switch-ball);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-#switch-on { 
-    transform: translateX(50px); 
-    background-color: #50f050 !important; 
-}
-
-#eye-container {
-    width: 30px;
-    background-color: transparent; 
-    margin-bottom: 5px; 
-    transition: all 0.3s ease-in-out;
-}
-
-#eye-closed {
-    height: 4px; 
-    padding: 0px 5px; 
-    border-radius: 10px; 
-    opacity: 0; 
-}
-
-#eye-open {
-    height: 4px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    opacity: 1; 
-    background-color: #3498db !important; 
-    transform: scale(1.5); 
-}
-
-#torso-container {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
+    border-radius: 50px;
+    width: 200px;
 }
 
 #torso {
-    width: 100px;
-    height: 120px;
-    background-color: var(--color-torso);
-    border-radius: 20px; 
+    width: 200px;
+    background-color: violet;
 }
 
-#left-arm, #right-arm {
-    width: 30px;
-    height: 80px;
-    background-color: var(--color-limbs);
-    border-radius: 15px; 
+/* --- Consignes: class-that --- */
+.eye {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 0; /* Override du padding global pour garder le cercle */
 }
 
-#legs-container {
-    display: flex;
-    gap: 20px; 
+.arm {
+    background-color: aquamarine;
 }
 
-#left-leg, #right-leg {
-    width: 30px;
-    height: 80px;
-    background-color: var(--color-legs);
-    border-radius: 15px;
+.leg {
+    background-color: dodgerblue;
+}
+
+.body-member {
+    width: 50px;
+    margin: 30px;
+}
+
+/* --- NOUVELLE CONSIGNE: bring-it-to-life --- */
+/* Cette classe sera ajoutée via JavaScript */
+.eye-closed {
+    height: 4px;
+    padding: 0 5px;
+    border-radius: 10px;
 }

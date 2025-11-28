@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><bring-it-to-life></bring-it-to-life></title>
+    <title>My Digital Being</title>
+    
     <link rel="stylesheet" href="bring-it-to-life.css">
+    
+    <script src="bring-it-to-life.js" defer></script>
 </head>
 <body>
 
-    <div id="background-band-1" class="top-band"></div>
-    <div id="background-band-2" class="middle-band"></div>
-    <div id="background-band-3" class="bottom-band"></div>
-
-    <div id="body">
-        
-        <div id="switch-container">
-            <div id="life-switch-ball"></div>
+    <section id="face">
+        <div id="eyes">
+            <p id="eye-left" class="eye"></p>
+            <p id="eye-right" class="eye"></p>
         </div>
+    </section>
 
-        <div id="eye-container" class="eye-closed"></div>
+    <section id="upper-body">
+        <div id="arm-left" class="arm body-member"></div>
+        <div id="torso"></div>
+        <div id="arm-right" class="arm body-member"></div>
+    </section>
 
-        <div id="torso-container">
-            <div id="left-arm"></div>
-            <div id="torso"></div>
-            <div id="right-arm"></div>
-        </div>
-        
-        <div id="legs-container">
-            <div id="left-leg"></div>
-            <div id="right-leg"></div>
-        </div>
+    <section id="lower-body">
+        <div id="leg-left" class="leg body-member"></div>
+        <div id="leg-right" class="leg body-member"></div>
+    </section>
 
-    </div>
-
-    <script src="bring-it-to-life.js" type="module"></script>
 </body>
 </html>
