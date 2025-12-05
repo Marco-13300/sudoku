@@ -1,1 +1,0 @@
-let inequality = NaN;
