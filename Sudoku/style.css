@@ -1,0 +1,22 @@
+#sudoku-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 40px);
+        grid-template-rows: repeat(9, 40px);
+        gap: 0px;
+        margin: 20px auto;
+        width: max-content;
+
+        border: 3px solid;
+        box-sizing: border-box;
+      }
+
+      #sudoku-grid div {
+        border: 1px solid #101cbe;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+      }
+#sudoku-grid div:nth-child(3n),
+#sudoku-grid div:nth-child(6n){
+    border-right: 3px solid
+}
